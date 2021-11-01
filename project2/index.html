@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+        }
+        
+        .card {
+            border: 2px solid red;
+            height: 300px;
+            width: 300px;
+            margin: 0px;
+            padding: 0px;
+            box-shadow: 10px 10px 5px rebeccapurple, -5px 10px 5px greenyellow;
+        }
+        
+        .grids {
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid black;
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px 200px 200px;
+            grid-template-rows: 250px 250px 250px; */
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+        
+        .cell {
+            border: 2px solid green;
+            background-color: aquamarine;
+        }
+        
+        .grids div:nth-child(2n) {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1"> First card</div>
+        <div class="card" id="card2">Second card</div>
+        <div class="card" id="card3">Third card</div>
+    </div>
+    <div class="grids">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+</body>
+
+</html>

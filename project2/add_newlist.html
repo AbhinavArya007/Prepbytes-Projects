@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #d6341f;
+        }
+        
+        a:hover {
+            text-shadow: 1px 1px 3px rgba(82, 82, 82, 0.9);
+        }
+        
+        .bg-img {
+            width: 100vw;
+            height: 100vh;
+            background: url("Untitled.png");
+            /* opacity: 0.7; */
+            filter: blur(4px);
+        }
+        
+        .card {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 200px;
+            background-color: white;
+            box-shadow: 5px 5px 15px rgba(99, 99, 99, 0.9);
+            border-radius: 10px;
+            border: 1px solid #d64431;
+            top: 200px;
+            left: 30%;
+            padding: 10px;
+            padding-right: 0;
+        }
+        
+        .card:hover {
+            box-shadow: 5px 5px 15px rgba(44, 44, 44, 0.9);
+        }
+        
+        .card h2 {
+            color: #d6341f;
+            font-weight: 200;
+            margin-bottom: 10px;
+        }
+        
+        .btn {
+            width: 70px;
+            background-color: #d64431;
+            color: white;
+            padding: 5px;
+            border: 3px solid white;
+            border-radius: 10px;
+        }
+        
+        .input-text {
+            border: 1px solid #cf5545;
+            margin: 10px;
+            margin-bottom: 0px;
+            width: 60%;
+            height: 25px;
+            border-radius: 2px;
+        }
+        
+        .btn:hover {
+            background-color: white;
+            color: #d6341f;
+            border: 3px solid #d6341f;
+        }
+        
+        .card i {
+            margin: 0;
+            display: inline-block;
+            position: relative;
+            left: 45%;
+            bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-img">
+
+    </div>
+    <div class="card">
+        <i class="material-icons" style="font-size:36px; color: #d6341f;"> <a href="todo2nd.html">cancel</a></i>
+        <h2>Add New List</h2>
+        <input type="text" class="input-text">
+        <br>
+        <button class="btn">ADD</button>
+
+    </div>
+
+</body>
+
+</html>

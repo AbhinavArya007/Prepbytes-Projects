@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            text-align: center;
+        }
+        
+        .container-trip {
+            width: 100%;
+            margin-top: 100px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .back-button {
+            margin: 10px;
+        }
+        
+        .back-button p {
+            font-size: 25px;
+            color: black;
+        }
+        
+        .card {
+            display: inline-block;
+            width: 250px;
+            height: 350px;
+            background-color: white;
+            box-shadow: 5px 5px 15px rgba(82, 82, 82, 0.9);
+            border-radius: 10px;
+            border: 1px solid #d64431;
+        }
+        
+        .card:hover {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-shadow: 1px 1px 3px rgba(82, 82, 82, 0.9);
+        }
+        
+        .card h2 {
+            font-weight: 300;
+            color: #e43c26;
+            text-align: center;
+        }
+        
+        .card hr {
+            width: 200px;
+            float: right;
+        }
+        
+        .add-list {
+            position: relative;
+            top: 120px;
+            left: 90px;
+        }
+        
+        .add-list i:hover {
+            color: #df1e04;
+            text-shadow: 1px 1px 3px rgba(82, 82, 82, 0.9);
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-trip">
+        <div style="width: 500px; height: 30px; border-bottom: 1px solid black; text-align: center; display: block;">
+            <span style="font-size: 40px; font-weight: 600; background-color: #ffffff; padding: 0 10px;">
+              Trip to Paris <!--Padding is optional-->
+            </span>
+        </div>
+
+    </div>
+    <div class="back-button">
+        <a href="todo2nd.html">
+            <p> <i class="fa fa-arrow-circle-left" style="font-size:36px; color: #e43c26;"></i> Back </p>
+
+        </a>
+    </div>
+    <div class="card">
+        <h2>Trip to Paris</h2>
+
+        <hr>
+        <p style="color: red; font-weight: 600;padding: 25px; font-size: 18px;"><del>Completed Task</del></p>
+        <span style="padding: 10px; font-size: 18px; font-weight: 400;"><input type="checkbox" name="task" id=""> Pending Tasks</span>
+        <div class="add-list">
+
+            <a href="new-item.html"> <i class="fa fa-plus-circle" style="color:#e43c26;font-size:36px; "></i> </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
